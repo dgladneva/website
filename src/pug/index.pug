@@ -1,0 +1,33 @@
+extends ./layout/main
+
+block content
+    main.main
+        .main__wrapper
+            section.slider slider3
+            section.menu
+                include ../modules/menu
+            section.contacts 
+                h1(class="scroll contacts__caption", id="catUnicId_3") Где нас найти?
+                .menu__row_contacts
+                    .menu__row_item 1
+                    .menu__row_item 1
+                    .menu__row_item 1
+            section.map
+            section.accordion
+                h1(class="scroll accordion__caption", id="catUnicId_4") Вопросы
+                .accordion__box
+                    input(id="q1", name="question1", type="checkbox")
+                    label(for="q1") Вопрос 1
+                    article.ac-small
+                        p Текст для 1го вопроса
+                .accordion__box
+                    input(id="q2", name="question2", type="checkbox")
+                    label(for="q2") Вопрос 2
+                    article.ac-medium
+                        p Текст для 2го вопроса
+                .accordion__box
+                    input(id="q3", name="question3", type="checkbox")
+                    label(for="q3") Вопрос 3
+                    article.ac-medium
+                        p Текст для 3го вопроса
+    include ../modules/footer
